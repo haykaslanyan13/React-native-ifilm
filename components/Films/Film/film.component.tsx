@@ -37,7 +37,7 @@ const FilmComponent = ({ film }: any) => {
     const language = useSelector((state: any) => state.language.language)
     const { movie } = useMovie({
         id: film.id,
-        language: language
+        language: language.value
     })
     return (
        <ScrollView style={styles.container}>
