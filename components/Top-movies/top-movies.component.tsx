@@ -11,7 +11,7 @@ const TopMovies = () => {
     const language = useSelector((state: any) => state.language.language)
     const [random, setRandom] = useState(Math.floor(Math.random() * 500))
     const { topRatedMovies } = useTopRatedMovies({
-        language,
+        language: language.value,
         page: random
     })
 

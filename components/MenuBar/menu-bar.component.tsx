@@ -29,7 +29,7 @@ const MenuBarComponent = () => {
                     style={styles.input}
                 />
                 <Button style={styles.button} buttonColor='#fe7900' compact  textColor={'white'} onPress={() => {
-                    navigate('Search',{
+                    searchText && navigate('Search',{
                         searchText
                     })
                     setSearchText('')
